@@ -7,7 +7,7 @@ import shutil
 
 from ojt_risk.engine import DataError, allocate_classes, analyze, load_data
 
-SAMPLE = Path(__file__).resolve().parents[1] / "data" / "sample"
+SAMPLE = Path(__file__).resolve().parent / "fixtures" / "demo"
 
 
 class EngineTests(unittest.TestCase):

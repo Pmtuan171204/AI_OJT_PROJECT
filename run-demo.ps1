@@ -10,7 +10,7 @@ try {
     } else {
         throw 'Python 3.10+ is required. Install Python and add it to PATH.'
     }
-    & $pythonExecutable -m ojt_risk --data data/sample --evaluation-term 2026_HK1 --target-term 2026_HK2 --output output/report.json
+    & $pythonExecutable -m ojt_risk --data tests/fixtures/demo --evaluation-term 2026_HK1 --target-term 2026_HK2 --output output/report.json
     if ($LASTEXITCODE -ne 0) { throw 'Demo failed.' }
 } finally {
     Pop-Location

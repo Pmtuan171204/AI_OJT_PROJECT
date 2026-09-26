@@ -1,64 +1,75 @@
-# OJT Risk — Python
+# AI OJT Project
 
-Bản đầu tiên cho hệ thống cảnh báo điều kiện OJT. Chạy bằng Python 3.10+,
-chưa cần cài thư viện ngoài. Dữ liệu trong `data/sample` hoàn toàn giả lập;
-môn OJT_PREP và số tín chỉ chỉ dùng kiểm thử, không phải khung chính thức.
+Hệ thống Python xét điều kiện OJT, gom nhóm học lại và dự báo theo kế hoạch học.
 
-## Chạy
+## Cấu trúc repo
 
-Trên máy Windows hiện tại có thể chạy `./run-demo.ps1`; script dùng Python
-trong PATH hoặc runtime Python đi kèm Codex nếu có.
-
-```powershell
-python -m ojt_risk --data data/sample --evaluation-term 2026_HK1 --target-term 2026_HK2 --output output/report.json
-python -m unittest discover -s tests -v
+```text
+AI_OJT_PROJECT/
+├── ojt_risk/                 # Mã nguồn xử lý nghiệp vụ
+├── scripts/                  # Công cụ sinh và chuẩn hóa dữ liệu
+├── data/
+│   ├── dataset/              # Bộ CSV chính đang xây dựng
+│   └── backups/              # Bản chụp cũ, chỉ lưu local, được Git bỏ qua
+├── tests/
+│   ├── fixtures/demo/        # Bộ CSV nhỏ độc lập để kiểm thử và chạy demo
+│   └── test_engine.py
+├── docs/                     # Tài liệu dataset, cách sao lưu
+├── output/                   # Kết quả chạy, được Git bỏ qua
+│   └── data_checks/          # Báo cáo sinh dữ liệu và đối chiếu tín chỉ
+├── run-demo.ps1
+└── pyproject.toml
 ```
 
-Nếu máy dùng Python Launcher, thay `python` bằng `py -3`.
-Kết quả JSON gồm evaluations, recommendations, forecasts và warnings.
-Chạy lại cùng dữ liệu tạo cùng kết quả; file đầu ra được ghi đè.
+## Dataset chính
 
-## Đã triển khai
+`data/dataset/` là nơi làm việc cho nhóm, gồm:
 
-- Import năm CSV UTF-8 (có thể có BOM), đọc theo tên cột, chấp nhận cột bổ sung.
-- Kiểm tra cột, khóa trùng, số không hợp lệ và liên kết dữ liệu.
-- Xét OJT: ít nhất 70 tín chỉ và tối đa hai môn FAILED.
-- Gom môn FAILED của sinh viên chưa đủ điều kiện OJT.
-- Đề xuất lớp 18–22: ưu tiên bố trí nhiều sinh viên nhất, sau đó gần 20 nhất.
-  Ví dụ 23 sinh viên → một lớp 22 và một người chờ; 40 → hai lớp 20.
-- Dự báo cuối kỳ 4 dựa trên kế hoạch kỳ 5 được cung cấp, kiểm tra cả tín chỉ
-  và số môn trượt còn lại; thiếu kế hoạch → INSUFFICIENT_DATA.
-- Chặn cộng thêm tín chỉ đối với môn đã PASSED.
+| File | Hiện trạng |
+|---|---|
+| student.csv | 2.000 sinh viên giả lập; tín chỉ đã đồng bộ theo môn PASSED |
+| curricula.csv | 12 mã khung lấy từ FLM |
+| curriculum_courses.csv | 577 dòng môn/nhóm học phần của 12 khung |
+| student_course_status.csv | 96.166 trạng thái giả lập cuối kỳ 4 |
+| student_study_plan.csv | Còn là mẫu DEMO cũ; chưa tạo kế hoạch cho 2.000 sinh viên |
 
-## Hợp đồng dữ liệu
+Không dùng thư mục backups làm dữ liệu đầu vào. Dataset chính chưa sẵn sàng
+cho toàn bộ luồng: kế hoạch học còn là mẫu cũ; bộ import hiện đọc `students.csv`
+(có s) và chưa chấp nhận kỳ 0 trong khung. Đây là việc tích hợp tiếp theo,
+không được coi là đã xử lý khi sắp xếp thư mục.
 
-Tên cột bắt buộc được định nghĩa trong `ojt_risk/engine.py` (SCHEMA).
-Mỗi CSV phải có tiêu đề kể cả khi không có dòng dữ liệu.
-Khung chương trình và kế hoạch phải được nhà trường xác nhận trước vận hành.
+## Chạy demo và kiểm thử
 
-- `students`: một dòng/sinh viên/đợt đánh giá; email có thể trống.
-- `curricula`: một dòng/mã khung.
-- `curriculum_courses`: một dòng/mã khung/mã môn.
-- `student_course_status`: một dòng/sinh viên/đợt/môn; phản ánh trạng thái
-  hiện tại và đầy đủ mọi môn FAILED còn tồn tại, không phải lịch sử lần thi.
-- `student_study_plan`: một dòng/sinh viên/đợt mục tiêu/môn; phải chứa đầy đủ
-  kế hoạch kỳ 5. REGISTERED là kế hoạch cá nhân, CURRICULUM_ASSUMPTION là
-  kế hoạch giả định đã chuẩn bị từ khung. Không tự sinh kế hoạch giả định ở bản này.
+Demo chạy bộ dữ liệu nhỏ riêng trong tests/fixtures/demo, không phải 2.000 sinh viên.
 
-Trạng thái môn: PASSED, FAILED, IN_PROGRESS, NOT_TAKEN. Chỉ FAILED được đếm.
-Việc thiếu một môn trượt trong nguồn không thể tự phát hiện chỉ từ CSV;
-nhà cung cấp dữ liệu phải xác nhận tính đầy đủ. Tín chỉ tích lũy lấy từ trường,
-không suy ra từ lịch sử chưa đầy đủ. Chạy đánh giá cuối kỳ chỉ sau khi chốt điểm.
-Đợt mục tiêu phải được người chạy chọn đúng, không suy luận thứ tự từ tên đợt.
-Cùng mã môn được giả định có thể học chung giữa các khung.
+```powershell
+.\run-demo.ps1
+python -m unittest discover -s tests -v
+python -m ojt_risk --data tests/fixtures/demo --evaluation-term 2026_HK1 --target-term 2026_HK2 --output output/report.json
+```
 
-## Phần tiếp theo
+Cần Python 3.10+. Script PowerShell cũng hỗ trợ Python đi kèm Codex nếu có.
 
-1. Đối chiếu dữ liệu thật và chính sách với trường, hỗ trợ ánh xạ cột/Excel.
-2. Lưu cơ sở dữ liệu, lịch sử import, kết quả và trạng thái phê duyệt.
-3. API và phân quyền tích hợp giao diện.
-4. AI diễn giải từ kết quả quy tắc, có mẫu nội dung dự phòng.
-5. Email: lịch gửi, chống trùng, gửi lại lỗi và môi trường kiểm thử.
+## Kiểm tra/sinh trạng thái cho dataset chính
 
-Chưa có API, dịch vụ AI hoặc gửi email trong phiên bản này. Không tải dữ liệu
-sinh viên thật lên Git; đặt dữ liệu riêng vào `data/private/` (được gitignore).
+```powershell
+python scripts/generate_student_course_status.py . --dry-run
+python scripts/generate_student_course_status.py . --sync-credits
+```
+
+Lệnh thứ hai sinh lại dữ liệu giả lập và cập nhật tín chỉ; tự sao lưu trước khi sửa.
+Báo cáo được ghi ở output/data_checks. Không chạy lệnh này trên dữ liệu thật của trường.
+
+## Backup và Git
+
+Backup là ảnh chụp của các file trước một lần sửa, không phải bản đồng bộ trực tiếp.
+Mỗi lần sinh dữ liệu có thư mục backup riêng; file cũ không tự cập nhật theo dataset.
+`data/backups/` và `output/` được .gitignore loại khỏi các lần git add thông thường.
+Chúng không được push lên GitHub bằng quy trình đó; cần tự sao chép ra nơi khác
+nếu muốn có bản dự phòng ngoài máy. Không xóa backup khi chưa xác định còn cần phục hồi.
+
+Chỉ version dữ liệu giả lập/khung chương trình được phép chia sẻ. Nếu có dữ liệu
+sinh viên thật, dùng data/private/ (đã được .gitignore bỏ qua).
+
+Chi tiết: [Quản lý dữ liệu](docs/data_management.md).
+Chưa tích hợp API, AI diễn giải hoặc gửi email thực tế.

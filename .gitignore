@@ -6,3 +6,6 @@ output/
 data/private/
 *.egg-info/
 .pytest_cache/
+
+# Local recovery snapshots; active synthetic data remains versioned.
+data/backups/
