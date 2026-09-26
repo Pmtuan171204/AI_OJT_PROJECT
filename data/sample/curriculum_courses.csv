@@ -1,6 +1,578 @@
-curriculum_code,course_id,course_name,credits,recommended_semester
-IS-K18D,PRF192,Programming Fundamentals,3,1
-IS-K18D,DBI202,Database,3,3
-IS-K18D,MAD101,Discrete Mathematics,3,2
-IS-K18D,OJT_PREP,Semester 5 sample course,15,5
-IS-K19A,PRF192,Programming Fundamentals,3,1
+﻿curriculum_code,course_id,course_name,credits,recommended_semester
+BIT_IS_K21B,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K21B,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K21B,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K21B,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K21B,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K21B,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K21B,PFP191,Programming Fundamentals with Python_Cơ sở lập trình với Python,3,1
+BIT_IS_K21B,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K21B,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K21B,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,2
+BIT_IS_K21B,DXE291c,Digital Ecosystem: From Governance to Business_Hệ sinh thái số: Từ Quản lý đến Kinh doanh,3,2
+BIT_IS_K21B,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K21B,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K21B,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K21B,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K21B,CSD203,Data Structures and Algorithm with Python_Cấu trúc dữ liệu và giải thuật với Python,3,3
+BIT_IS_K21B,ISD201,Information Systems in the Digital Age_Hệ thống thông tin trong kỷ nguyên số,3,3
+BIT_IS_K21B,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K21B,MAS291,Statistics & Probability_Xác suất thống kê,3,3
+BIT_IS_K21B,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,3
+BIT_IS_K21B,AIL304m,Machine Learning_Học máy,3,4
+BIT_IS_K21B,IAO202,Information Assurance Overview_Nhập môn An toàn thông tin,3,4
+BIT_IS_K21B,IOT102,Internet of Things_Internet vạn vật,3,4
+BIT_IS_K21B,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,4
+BIT_IS_K21B,PWD301,Python Web Development_Phát triển Web với Python,3,4
+BIT_IS_K21B,BDI302c,Big Data_Dữ liệu lớn,3,5
+BIT_IS_K21B,DX_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K21B,DXP391,Digital Product Development_Dự án chuyển đổi số,3,5
+BIT_IS_K21B,EGA301,E-Government and Public Administration_Chính phủ điện tử và hành chính công,3,5
+BIT_IS_K21B,SSG105,Kỹ năng giao tiếp và cộng tác,3,5
+BIT_IS_K21B,SWT301,Software Testing_Kiểm thử phần mềm,3,5
+BIT_IS_K21B,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K21B,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K21B,DX_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K21B,DX_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K21B,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K21B,ITE304,Law and Ethics in Digital Technology_Pháp luật và đạo đức trong công nghệ số,3,7
+BIT_IS_K21B,PRC392c,Cloud Computing_Điện toán đám mây,3,7
+BIT_IS_K21B,DX_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K21B,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K21B,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,8
+BIT_IS_K21B,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K21B,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K21B,PIM201c,Project and Innovation Management_Quản trị dự án và đổi mới,3,8
+BIT_IS_K21B,DX_GRA_ELE,Graduation Elective - Digital Transformation_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Chuyển đổi số,10,10
+BIT_IS_K21B,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,10
+BIT_IS_K21B,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,10
+BIT_IS_K21B,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,10
+BIT_IS_K21C,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K21C,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K21C,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K21C,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K21C,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K21C,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K21C,PFP191,Programming Fundamentals with Python_Cơ sở lập trình với Python,3,1
+BIT_IS_K21C,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K21C,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K21C,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,2
+BIT_IS_K21C,DXE291c,Digital Ecosystem: From Governance to Business_Hệ sinh thái số: Từ Quản lý đến Kinh doanh,3,2
+BIT_IS_K21C,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K21C,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K21C,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K21C,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K21C,CSD203,Data Structures and Algorithm with Python_Cấu trúc dữ liệu và giải thuật với Python,3,3
+BIT_IS_K21C,ISD201,Information Systems in the Digital Age_Hệ thống thông tin trong kỷ nguyên số,3,3
+BIT_IS_K21C,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K21C,MAS291,Statistics & Probability_Xác suất thống kê,3,3
+BIT_IS_K21C,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,3
+BIT_IS_K21C,AIL304m,Machine Learning_Học máy,3,4
+BIT_IS_K21C,IAO202,Information Assurance Overview_Nhập môn An toàn thông tin,3,4
+BIT_IS_K21C,IOT102,Internet of Things_Internet vạn vật,3,4
+BIT_IS_K21C,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,4
+BIT_IS_K21C,PWD301,Python Web Development_Phát triển Web với Python,3,4
+BIT_IS_K21C,BDI302c,Big Data_Dữ liệu lớn,3,5
+BIT_IS_K21C,DX_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K21C,DXP391,Digital Product Development_Dự án chuyển đổi số,3,5
+BIT_IS_K21C,EGA301,E-Government and Public Administration_Chính phủ điện tử và hành chính công,3,5
+BIT_IS_K21C,SSG105,Kỹ năng giao tiếp và cộng tác,3,5
+BIT_IS_K21C,SWT301,Software Testing_Kiểm thử phần mềm,3,5
+BIT_IS_K21C,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K21C,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K21C,DX_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K21C,DX_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K21C,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K21C,ITE304,Law and Ethics in Digital Technology_Pháp luật và đạo đức trong công nghệ số,3,7
+BIT_IS_K21C,PRC392c,Cloud Computing_Điện toán đám mây,3,7
+BIT_IS_K21C,DX_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K21C,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K21C,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,8
+BIT_IS_K21C,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K21C,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K21C,PIM201c,Project and Innovation Management_Quản trị dự án và đổi mới,3,8
+BIT_IS_K21C,DX_GRA_ELE,Graduation Elective - Digital Transformation_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Chuyển đổi số,10,10
+BIT_IS_K21C,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,10
+BIT_IS_K21C,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,10
+BIT_IS_K21C,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,10
+BIT_IS_K21A,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K21A,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K21A,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K21A,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K21A,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K21A,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K21A,PFP191,Programming Fundamentals with Python_Cơ sở lập trình với Python,3,1
+BIT_IS_K21A,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K21A,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K21A,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,2
+BIT_IS_K21A,DXE291c,Digital Ecosystem: From Governance to Business_Hệ sinh thái số: Từ Quản lý đến Kinh doanh,3,2
+BIT_IS_K21A,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K21A,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K21A,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K21A,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K21A,CSD203,Data Structures and Algorithm with Python_Cấu trúc dữ liệu và giải thuật với Python,3,3
+BIT_IS_K21A,ISD201,Information Systems in the Digital Age_Hệ thống thông tin trong kỷ nguyên số,3,3
+BIT_IS_K21A,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K21A,MAS291,Statistics & Probability_Xác suất thống kê,3,3
+BIT_IS_K21A,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,3
+BIT_IS_K21A,AIL304m,Machine Learning_Học máy,3,4
+BIT_IS_K21A,IAO202,Information Assurance Overview_Nhập môn An toàn thông tin,3,4
+BIT_IS_K21A,IOT102,Internet of Things_Internet vạn vật,3,4
+BIT_IS_K21A,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,4
+BIT_IS_K21A,PWD301,Python Web Development_Phát triển Web với Python,3,4
+BIT_IS_K21A,BDI302c,Big Data_Dữ liệu lớn,3,5
+BIT_IS_K21A,DX_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K21A,DXP391,Digital Product Development_Dự án chuyển đổi số,3,5
+BIT_IS_K21A,EGA301,E-Government and Public Administration_Chính phủ điện tử và hành chính công,3,5
+BIT_IS_K21A,SSG105,Kỹ năng giao tiếp và cộng tác,3,5
+BIT_IS_K21A,SWT301,Software Testing_Kiểm thử phần mềm,3,5
+BIT_IS_K21A,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K21A,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K21A,DX_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K21A,DX_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K21A,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K21A,ITE304,Law and Ethics in Digital Technology_Pháp luật và đạo đức trong công nghệ số,3,7
+BIT_IS_K21A,PRC392c,Cloud Computing_Điện toán đám mây,3,7
+BIT_IS_K21A,DX_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K21A,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K21A,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,8
+BIT_IS_K21A,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K21A,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K21A,PIM201c,Project and Innovation Management_Quản trị dự án và đổi mới,3,8
+BIT_IS_K21A,DX_GRA_ELE,Graduation Elective - Digital Transformation_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Chuyển đổi số,10,10
+BIT_IS_K21A,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,10
+BIT_IS_K21A,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,10
+BIT_IS_K21A,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,10
+BIT_IS_K18D_19A,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K18D_19A,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K18D_19A,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K18D_19A,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K18D_19A,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K18D_19A,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K18D_19A,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K18D_19A,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K18D_19A,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K18D_19A,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K18D_19A,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K18D_19A,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K18D_19A,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K18D_19A,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K18D_19A,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K18D_19A,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,2
+BIT_IS_K18D_19A,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K18D_19A,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K18D_19A,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K18D_19A,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,3
+BIT_IS_K18D_19A,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K18D_19A,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,4
+BIT_IS_K18D_19A,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K18D_19A,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K18D_19A,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K18D_19A,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K18D_19A,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K18D_19A,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K18D_19A,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K18D_19A,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K18D_19A,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K18D_19A,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K18D_19A,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K18D_19A,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K18D_19A,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K18D_19A,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K18D_19A,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K18D_19A,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K18D_19A,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K18D_19A,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K18D_19A,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K18D_19A,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K18D_19A,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K18D_19A,PMG201c,Project Management,3,8
+BIT_IS_K18D_19A,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K18D_19A,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K18D_19A,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K18D_19A,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K19B,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K19B,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K19B,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K19B,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K19B,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K19B,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K19B,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K19B,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K19B,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K19B,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K19B,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K19B,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K19B,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K19B,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K19B,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K19B,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,2
+BIT_IS_K19B,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K19B,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K19B,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K19B,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,3
+BIT_IS_K19B,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K19B,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,4
+BIT_IS_K19B,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K19B,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K19B,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K19B,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K19B,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K19B,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K19B,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K19B,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K19B,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K19B,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K19B,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K19B,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K19B,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K19B,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K19B,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K19B,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K19B,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K19B,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K19B,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K19B,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K19B,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K19B,PMG201c,Project Management,3,8
+BIT_IS_K19B,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K19B,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K19B,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K19B,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K19C,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K19C,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K19C,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K19C,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K19C,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K19C,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K19C,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K19C,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K19C,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K19C,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K19C,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K19C,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K19C,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K19C,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K19C,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K19C,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,2
+BIT_IS_K19C,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K19C,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K19C,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K19C,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,3
+BIT_IS_K19C,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K19C,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,4
+BIT_IS_K19C,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K19C,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K19C,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K19C,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K19C,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K19C,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K19C,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K19C,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K19C,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K19C,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K19C,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K19C,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K19C,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K19C,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K19C,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K19C,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K19C,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K19C,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K19C,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K19C,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K19C,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K19C,PMG201c,Project Management,3,8
+BIT_IS_K19C,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K19C,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K19C,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K19C,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K19D_K20A,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K19D_K20A,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K19D_K20A,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K19D_K20A,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K19D_K20A,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K19D_K20A,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K19D_K20A,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K19D_K20A,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K19D_K20A,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K19D_K20A,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K19D_K20A,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K19D_K20A,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K19D_K20A,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K19D_K20A,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K19D_K20A,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K19D_K20A,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K19D_K20A,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K19D_K20A,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K19D_K20A,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K19D_K20A,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K19D_K20A,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K19D_K20A,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K19D_K20A,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K19D_K20A,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K19D_K20A,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,4
+BIT_IS_K19D_K20A,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K19D_K20A,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K19D_K20A,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K19D_K20A,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K19D_K20A,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K19D_K20A,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K19D_K20A,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K19D_K20A,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K19D_K20A,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K19D_K20A,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K19D_K20A,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K19D_K20A,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K19D_K20A,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K19D_K20A,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K19D_K20A,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K19D_K20A,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K19D_K20A,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K19D_K20A,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K19D_K20A,PMG201c,Project Management,3,8
+BIT_IS_K19D_K20A,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K19D_K20A,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K19D_K20A,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K19D_K20A,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K20B,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K20B,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K20B,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K20B,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K20B,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K20B,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K20B,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K20B,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K20B,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K20B,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K20B,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K20B,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K20B,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K20B,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K20B,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K20B,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K20B,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K20B,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K20B,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K20B,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K20B,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K20B,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K20B,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K20B,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K20B,SSG105,Kỹ năng giao tiếp và cộng tác,3,4
+BIT_IS_K20B,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K20B,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K20B,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K20B,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K20B,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K20B,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K20B,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K20B,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K20B,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K20B,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K20B,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K20B,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K20B,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K20B,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K20B,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K20B,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K20B,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K20B,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K20B,PMG201c,Project Management,3,8
+BIT_IS_K20B,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K20B,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K20B,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K20B,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K20C,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K20C,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K20C,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K20C,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K20C,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K20C,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K20C,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K20C,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K20C,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K20C,SSL101c,Academic Skills for University Success_Kỹ năng học tập đại học,3,1
+BIT_IS_K20C,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K20C,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K20C,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K20C,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K20C,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K20C,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K20C,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K20C,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K20C,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K20C,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K20C,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K20C,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K20C,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K20C,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K20C,SSG105,Kỹ năng giao tiếp và cộng tác,3,4
+BIT_IS_K20C,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K20C,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K20C,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K20C,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K20C,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K20C,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K20C,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K20C,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K20C,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K20C,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K20C,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K20C,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K20C,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K20C,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K20C,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K20C,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K20C,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K20C,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K20C,PMG201c,Project Management,3,8
+BIT_IS_K20C,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K20C,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K20C,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K20C,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K20D,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K20D,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K20D,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K20D,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K20D,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K20D,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K20D,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K20D,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K20D,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K20D,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K20D,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K20D,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K20D,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K20D,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K20D,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K20D,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K20D,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K20D,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K20D,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K20D,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K20D,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K20D,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K20D,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K20D,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K20D,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,4
+BIT_IS_K20D,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K20D,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K20D,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K20D,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K20D,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K20D,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K20D,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K20D,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K20D,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K20D,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K20D,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K20D,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K20D,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K20D,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K20D,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K20D,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K20D,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K20D,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K20D,PMG201c,Project Management,3,8
+BIT_IS_K20D,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K20D,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K20D,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K20D,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9
+BIT_IS_K21D-22A,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K21D-22A,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K21D-22A,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K21D-22A,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K21D-22A,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K21D-22A,MAC103,Calculus_Giải tích,3,1
+BIT_IS_K21D-22A,MAD101,Discrete mathematics_Toán rời rạc,3,1
+BIT_IS_K21D-22A,PFP191,Programming Fundamentals with Python_Cơ sở lập trình với Python,3,1
+BIT_IS_K21D-22A,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K21D-22A,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K21D-22A,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,2
+BIT_IS_K21D-22A,DXE291c,Digital Ecosystem: From Governance to Business_Hệ sinh thái số: Từ Quản lý đến Kinh doanh,3,2
+BIT_IS_K21D-22A,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K21D-22A,MAA102,Linear Algebra_Đại số tuyến tính,3,2
+BIT_IS_K21D-22A,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K21D-22A,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K21D-22A,CSD203,Data Structures and Algorithm with Python_Cấu trúc dữ liệu và giải thuật với Python,3,3
+BIT_IS_K21D-22A,ISD201,Information Systems in the Digital Age_Hệ thống thông tin trong kỷ nguyên số,3,3
+BIT_IS_K21D-22A,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K21D-22A,MAS291,Statistics & Probability_Xác suất thống kê,3,3
+BIT_IS_K21D-22A,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,3
+BIT_IS_K21D-22A,AIL304m,Machine Learning_Học máy,3,4
+BIT_IS_K21D-22A,IAO202,Information Assurance Overview_Nhập môn An toàn thông tin,3,4
+BIT_IS_K21D-22A,IOT102,Internet of Things_Internet vạn vật,3,4
+BIT_IS_K21D-22A,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,4
+BIT_IS_K21D-22A,PWD301,Python Web Development_Phát triển Web với Python,3,4
+BIT_IS_K21D-22A,BDI302c,Big Data_Dữ liệu lớn,3,5
+BIT_IS_K21D-22A,DX_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K21D-22A,DXP391,Digital Product Development_Dự án chuyển đổi số,3,5
+BIT_IS_K21D-22A,EGA301,E-Government and Public Administration_Chính phủ điện tử và hành chính công,3,5
+BIT_IS_K21D-22A,SSG105,Kỹ năng giao tiếp và cộng tác,3,5
+BIT_IS_K21D-22A,SWT301,Software Testing_Kiểm thử phần mềm,3,5
+BIT_IS_K21D-22A,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K21D-22A,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K21D-22A,DX_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K21D-22A,DX_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K21D-22A,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K21D-22A,ITE304,Law and Ethics in Digital Technology_Pháp luật và đạo đức trong công nghệ số,3,7
+BIT_IS_K21D-22A,PRC392c,Cloud Computing_Điện toán đám mây,3,7
+BIT_IS_K21D-22A,DX_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K21D-22A,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K21D-22A,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,8
+BIT_IS_K21D-22A,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K21D-22A,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K21D-22A,PIM201c,Project and Innovation Management_Quản trị dự án và đổi mới,3,8
+BIT_IS_K21D-22A,DX_GRA_ELE,Graduation Elective - Digital Transformation_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Chuyển đổi số,10,10
+BIT_IS_K21D-22A,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,10
+BIT_IS_K21D-22A,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,10
+BIT_IS_K21D-22A,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,10
+BIT_IS_K20D-21A,OTP101,Orientation and General Training Program_Định hướng và Rèn luyện tập trung,0,0
+BIT_IS_K20D-21A,PEN,Preparation English_Tiếng Anh chuẩn bị,0,0
+BIT_IS_K20D-21A,PHE_COM*1,Physical Education 1_Giáo dục thể chất 1,2,0
+BIT_IS_K20D-21A,TMI_ELE,Traditional musical instrument_Nhạc cụ truyền thống,3,0
+BIT_IS_K20D-21A,CEA201,Computer Organization and Architecture_Tổ chức và Kiến trúc máy tính,3,1
+BIT_IS_K20D-21A,CSI106,Introduction to Computer Science_Nhập môn khoa học máy tính,3,1
+BIT_IS_K20D-21A,MAE101,Mathematics for Engineering_Toán cho ngành kỹ thuật,3,1
+BIT_IS_K20D-21A,PHE_COM*2,Physical Education 2_Giáo dục thể chất 2,2,1
+BIT_IS_K20D-21A,PRF192,Programming Fundamentals_Cơ sở lập trình,3,1
+BIT_IS_K20D-21A,SSA101,Kỹ năng học thuật,3,1
+BIT_IS_K20D-21A,JPD113,Elementary Japanese 1- A1.1_Tiếng Nhật sơ cấp 1-A1.1,3,2
+BIT_IS_K20D-21A,MAD101,Discrete mathematics_Toán rời rạc,3,2
+BIT_IS_K20D-21A,NWC204,Computer Networking_Mạng máy tính,3,2
+BIT_IS_K20D-21A,OSG202,Operating Systems_Hệ điều hành,3,2
+BIT_IS_K20D-21A,PHE_COM*3,Physical Education 3_Giáo dục thể chất 3,2,2
+BIT_IS_K20D-21A,PRO192,Object-Oriented Programming_Lập trình hướng đối tượng,3,2
+BIT_IS_K20D-21A,CSD201,Data Structures and Algorithms_Cấu trúc dữ liệu và giải thuật,3,3
+BIT_IS_K20D-21A,DBI202,Introduction to Databases_Các hệ cơ sở dữ liệu,3,3
+BIT_IS_K20D-21A,ITA203c,Information System Overview/Nhập môn hệ thống thông tin,3,3
+BIT_IS_K20D-21A,JPD123,Elementary Japanese 1-A1.2_Tiếng Nhật sơ cấp 1-A1.2,3,3
+BIT_IS_K20D-21A,LAB211,OOP with Java Lab_Thực hành OOP với Java,3,3
+BIT_IS_K20D-21A,MAS291,Statistics & Probability_Xác suất thống kê,3,4
+BIT_IS_K20D-21A,PRC392c,Cloud Computing_Điện toán đám mây,3,4
+BIT_IS_K20D-21A,PRJ302,Java Web Application Development_Phát triển ứng dụng Java web,3,4
+BIT_IS_K20D-21A,SSG104,Communication and In-Group Working Skills_Kỹ năng giao tiếp và cộng tác,3,4
+BIT_IS_K20D-21A,SWE201c,Introduction to Software Engineering_Nhập môn kĩ thuật phần mềm,3,4
+BIT_IS_K20D-21A,IS_COM*1,Subject 1 of Combo*_Học phần 1 của combo*,3,5
+BIT_IS_K20D-21A,ISM302,Enterprise Resource Planning (ERP)_Lập kế hoạch nguồn lực doanh nghiệp,3,5
+BIT_IS_K20D-21A,ISP392,Information System Programming Project_Dự án lập trình HTTT,3,5
+BIT_IS_K20D-21A,ITA301,Information System Design & Analysis_Phân tích thiết kế HTTT,3,5
+BIT_IS_K20D-21A,ITE302c,Ethics in IT_Đạo đức trong CNTT,3,5
+BIT_IS_K20D-21A,ENW493c,Research Methods & Academic Writing Skills_Phương pháp nghiên cứu & Kỹ năng viết học thuật,3,6
+BIT_IS_K20D-21A,OJT202,On-The-Job Training_Đào tạo trong môi trường thực tế,10,6
+BIT_IS_K20D-21A,EXE101,Experiential Entrepreneurship 1_Trải nghiệm khởi nghiệp 1,3,7
+BIT_IS_K20D-21A,IS_COM*2,Subject 2 of Combo*_Học phần 2 của combo*,3,7
+BIT_IS_K20D-21A,IS_COM*3,Subject 3 of Combo*_Học phần 3 của combo*,3,7
+BIT_IS_K20D-21A,ISC301,e-Commerce_Thương mại điện tử,3,7
+BIT_IS_K20D-21A,ITB302c,Business Intelligence (BI)_Kinh doanh thông minh,3,7
+BIT_IS_K20D-21A,DTA301,Data Analysis_Phân tích dữ liệu,3,8
+BIT_IS_K20D-21A,EXE201,Experiential Entrepreneurship 2_Trải nghiệm khởi nghiệp 2,3,8
+BIT_IS_K20D-21A,IS_COM*4,Subject 4 of Combo*_Học phần 4 của combo*,3,8
+BIT_IS_K20D-21A,MLN111,Philosophy of Marxism – Leninism_Triết học Mác - Lê-nin,3,8
+BIT_IS_K20D-21A,MLN122,Political economics of Marxism – Leninism_Kinh tế chính trị Mác - Lê-nin,2,8
+BIT_IS_K20D-21A,PMG201c,Project Management,3,8
+BIT_IS_K20D-21A,HCM202,Ho Chi Minh Ideology_Tư tưởng Hồ Chí Minh,2,9
+BIT_IS_K20D-21A,IS_GRA_ELE,Graduation Elective - Information System_Học phần lựa chọn Đồ án tốt nghiệp chuyên ngành Hệ thống thông tin,10,9
+BIT_IS_K20D-21A,MLN131,Scientific socialism_Chủ nghĩa xã hội khoa học,2,9
+BIT_IS_K20D-21A,VNR202,History of Communist Party of Vietnam_Lịch sử Đảng Cộng sản Việt Nam,2,9

@@ -1,3 +1,13 @@
-curriculum_code,curriculum_name
-IS-K18D,Information Systems K18D
-IS-K19A,Information Systems K19A
+﻿curriculum_code,curriculum_name,total_program_credits,source_curriculum_id,decision_number,decision_date,source_url
+BIT_IS_K21B,"The Bachelor Program of Information Technology, Digital Transformation Major (Chương trình cử nhân ngành CNTT, chuyên ngành Chuyển đổi số)",145,3157,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3157
+BIT_IS_K21C,"The Bachelor Program of Information Technology, Digital Transformation Major (Chương trình cử nhân ngành CNTT, chuyên ngành Chuyển đổi số)",145,3158,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3158
+BIT_IS_K21A,"The Bachelor Program of Information Technology, Digital Transformation Major (Chương trình cử nhân ngành CNTT, chuyên ngành Chuyển đổi số)",145,3221,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3221
+BIT_IS_K18D_19A,"The Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3226,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3226
+BIT_IS_K19B,"The Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3228,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3228
+BIT_IS_K19C,"The Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3229,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3229
+BIT_IS_K19D_K20A,"The Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3230,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3230
+BIT_IS_K20B,"Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3233,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3233
+BIT_IS_K20C,"Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3234,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3234
+BIT_IS_K20D,"Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,3236,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3236
+BIT_IS_K21D-22A,"The Bachelor Program of Information Technology, Digital Transformation Major (Chương trình cử nhân ngành CNTT, chuyên ngành Chuyển đổi số)",148,3277,1140/QĐ-ĐHFPT,9/11/2026,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=3277
+BIT_IS_K20D-21A,"Bachelor Program of Information Technology, Information System Major (Chương trình cử nhân ngành CNTT, chuyên ngành Hệ thống thông tin)",145,2660,1025/QĐ-ĐHFPT,9/12/2025,https://flm.fpt.edu.vn/gui/role/guest/CurriculumDetails?curid=2660
