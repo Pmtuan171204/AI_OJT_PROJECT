@@ -87,7 +87,7 @@ def main():
     parser.add_argument('repo',type=Path)
     parser.add_argument('--sync-credits',action='store_true')
     parser.add_argument('--dry-run',action='store_true')
-    parser.add_argument('--prepare',action='store_true',help='Validate and assemble raw/synthetic into processed without regenerating students')
+    parser.add_argument('--prepare',action='store_true',help='Validate raw/synthetic directly without copying or regenerating students')
     args=parser.parse_args()
     if args.prepare:
         from ojt_ai.data.preprocessing import prepare_dataset

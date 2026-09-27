@@ -10,7 +10,7 @@ from ojt_ai.data.loader import load_data
 from ojt_ai.rules.eligibility import allocate_classes
 from ojt_ai.services.risk_service import analyze
 
-SAMPLE = Path(__file__).resolve().parents[2] / "data" / "synthetic" / "demo"
+SAMPLE = Path(__file__).resolve().parents[1] / "fixtures" / "demo"
 
 
 class EngineTests(unittest.TestCase):

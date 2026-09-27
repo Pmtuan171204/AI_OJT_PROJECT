@@ -6,7 +6,7 @@ from pathlib import Path
 from ojt_ai.data.preprocessing import prepare_dataset
 from ojt_ai.data.loader import load_data
 
-DEMO=Path(__file__).resolve().parents[2]/"data/synthetic/demo"
+DEMO=Path(__file__).resolve().parents[1]/"fixtures/demo"
 class PreprocessingTests(unittest.TestCase):
     def test_prepare_supports_student_filename_and_semester_zero(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -22,6 +22,8 @@ class PreprocessingTests(unittest.TestCase):
             with path.open("a",encoding="utf-8") as f:
                 f.write("IS-K18D,INTRO,Orientation,0,0\n")
             output,_=prepare_dataset(root)
+            self.assertEqual(output, root / "data")
+            self.assertFalse((root / "data/processed").exists())
             tables,_=load_data(output)
             self.assertEqual(len(tables["students"]),3)
             self.assertEqual(tables["curriculum_courses"][-1]["recommended_semester"],0)

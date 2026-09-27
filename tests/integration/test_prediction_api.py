@@ -10,7 +10,7 @@ except ImportError:
 @unittest.skipIf(TestClient is None, "Install API/dev extras to run HTTP integration tests")
 class PredictionApiTests(unittest.TestCase):
     def setUp(self):
-        app.dependency_overrides[get_data_directory] = lambda: Path(__file__).resolve().parents[2]/"data/synthetic/demo"
+        app.dependency_overrides[get_data_directory] = lambda: Path(__file__).resolve().parents[1]/"fixtures/demo"
         self.client=TestClient(app)
     def tearDown(self):
         app.dependency_overrides.clear()

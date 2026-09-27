@@ -6,11 +6,16 @@ from .validator import DataError, SCHEMA, KEYS, NUMBERS, validate_relations
 
 def load_data(directory):
     """Reject invalid batches; tolerate extra columns. Headers required for empty tables."""
+    directory = Path(directory)
+    split_layout = (directory / "raw").is_dir() and (directory / "synthetic").is_dir()
     tables, warnings = {}, []
     for table, fields in SCHEMA.items():
-        path = Path(directory) / ("student.csv" if table == "students" else f"{table}.csv")
+        folder = directory
+        if split_layout:
+            folder = directory / ("raw" if table in ("curricula", "curriculum_courses") else "synthetic")
+        path = folder / ("student.csv" if table == "students" else f"{table}.csv")
         if table == "students" and not path.exists():
-            path = Path(directory) / "students.csv"
+            path = folder / "students.csv"
         with path.open(encoding="utf-8-sig", newline="") as stream:
             reader = csv.DictReader(stream)
             headers = reader.fieldnames or []
