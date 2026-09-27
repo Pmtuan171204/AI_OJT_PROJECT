@@ -2,10 +2,13 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
-output/
-data/private/
 *.egg-info/
 .pytest_cache/
-
-# Local recovery snapshots; active synthetic data remains versioned.
+.ipynb_checkpoints/
 data/backups/
+data/private/
+data/processed/*
+!data/processed/.gitkeep
+models/trained/*
+!models/trained/.gitkeep
+output/

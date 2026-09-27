@@ -1,0 +1,5 @@
+{
+  "trained": false,
+  "metrics": null,
+  "reason": "Training target and historical labels are not available."
+}

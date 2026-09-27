@@ -1,0 +1,6 @@
+{
+  "enabled": false,
+  "random_seed": 20260926,
+  "label_column": null,
+  "notes": "Define historical outcome labels and time-based split before training. Synthetic data is for pipeline testing."
+}

@@ -1,0 +1,4 @@
+student_id,full_name,email,cohort,curriculum_code,current_semester,academic_term,accumulated_credits
+DEMO001,Demo Student 1,demo1@example.invalid,K18,IS-K18D,4,2026_HK1,55
+DEMO002,Demo Student 2,demo2@example.invalid,K18,IS-K18D,4,2026_HK1,70
+DEMO003,Demo Student 3,,K19,IS-K19A,4,2026_HK1,69

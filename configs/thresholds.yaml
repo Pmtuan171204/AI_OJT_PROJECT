@@ -1,0 +1,7 @@
+{
+  "min_credits": 70,
+  "max_failed": 2,
+  "class_min": 18,
+  "class_target": 20,
+  "class_max": 22
+}

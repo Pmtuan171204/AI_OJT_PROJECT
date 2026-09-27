@@ -1,75 +1,87 @@
-# AI OJT Project
+# AI OJT Risk
 
-Hệ thống Python xét điều kiện OJT, gom nhóm học lại và dự báo theo kế hoạch học.
+Repo Python dùng cấu trúc src/ojt_ai. Thư mục local giữ tên AI_OJT_PROJECT.
+Hiện chạy được xét OJT theo quy tắc, gom lớp và dự báo có điều kiện.
+ML trainer/evaluator/predictor mới là khung mở rộng: chưa có model hoặc metrics.
 
-## Cấu trúc repo
+## Cấu trúc và dữ liệu
 
-```text
-AI_OJT_PROJECT/
-├── ojt_risk/                 # Mã nguồn xử lý nghiệp vụ
-├── scripts/                  # Công cụ sinh và chuẩn hóa dữ liệu
-├── data/
-│   ├── dataset/              # Bộ CSV chính đang xây dựng
-│   └── backups/              # Bản chụp cũ, chỉ lưu local, được Git bỏ qua
-├── tests/
-│   ├── fixtures/demo/        # Bộ CSV nhỏ độc lập để kiểm thử và chạy demo
-│   └── test_engine.py
-├── docs/                     # Tài liệu dataset, cách sao lưu
-├── output/                   # Kết quả chạy, được Git bỏ qua
-│   └── data_checks/          # Báo cáo sinh dữ liệu và đối chiếu tín chỉ
-├── run-demo.ps1
-└── pyproject.toml
-```
+- configs/: cấu hình model, training và ngưỡng nghiệp vụ. YAML sử dụng cú pháp JSON hợp lệ để đọc bằng thư viện chuẩn.
+- data/raw/: curricula.csv và curriculum_courses.csv lấy từ FLM (12 khung, 577 dòng).
+- data/synthetic/: student.csv (2.000 sinh viên), student_course_status.csv (96.166 dòng).
+- data/synthetic/student_study_plan.csv: hiện chỉ có header, kế hoạch kỳ 5 chưa được xây dựng.
+- data/synthetic/demo/: bộ dữ liệu nhỏ cho tests, giữ kế hoạch DEMO cũ ở đây.
+- data/processed/: bản được kiểm tra và ghép từ raw/synthetic để chạy phân tích; không chỉnh tay.
+- data/backups/: snapshot local, không đồng bộ theo dataset và không đưa vào Git.
+- src/ojt_ai/: data, features, rules, ml, services, schemas, utils.
+- scripts/: generate_dataset.py, train.py, evaluate.py, predict.py.
+- api/: API FastAPI, hiện dùng quy tắc; chưa có xác thực/phân quyền cho vận hành thực tế.
+- tests/: unit và integration; notebooks/: thử nghiệm; docker/: cấu hình container.
+- models/trained/: model tương lai; models/metadata/: thông tin phiên bản/metrics tương lai.
+- output/: kết quả phân tích và báo cáo kiểm tra, được Git bỏ qua.
 
-## Dataset chính
+## Cài đặt
 
-`data/dataset/` là nơi làm việc cho nhóm, gồm:
-
-| File | Hiện trạng |
-|---|---|
-| student.csv | 2.000 sinh viên giả lập; tín chỉ đã đồng bộ theo môn PASSED |
-| curricula.csv | 12 mã khung lấy từ FLM |
-| curriculum_courses.csv | 577 dòng môn/nhóm học phần của 12 khung |
-| student_course_status.csv | 96.166 trạng thái giả lập cuối kỳ 4 |
-| student_study_plan.csv | Còn là mẫu DEMO cũ; chưa tạo kế hoạch cho 2.000 sinh viên |
-
-Không dùng thư mục backups làm dữ liệu đầu vào. Dataset chính chưa sẵn sàng
-cho toàn bộ luồng: kế hoạch học còn là mẫu cũ; bộ import hiện đọc `students.csv`
-(có s) và chưa chấp nhận kỳ 0 trong khung. Đây là việc tích hợp tiếp theo,
-không được coi là đã xử lý khi sắp xếp thư mục.
-
-## Chạy demo và kiểm thử
-
-Demo chạy bộ dữ liệu nhỏ riêng trong tests/fixtures/demo, không phải 2.000 sinh viên.
+Python 3.10+; nên tạo môi trường ảo trước khi cài thư viện.
 
 ```powershell
-.\run-demo.ps1
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+Core chỉ dùng thư viện chuẩn. API và HTTP tests cần các extra trong requirements.txt.
+.env.example là mẫu cấu hình; ứng dụng đọc biến môi trường của tiến trình, chưa tự tải .env.
+
+## Chạy dataset chính
+
+```powershell
+python scripts/generate_dataset.py . --prepare
+python scripts/predict.py --data data/processed --evaluation-term 2026_Fall --target-term 2027_Spring
+```
+
+2027_Spring chỉ là đợt mục tiêu trong ví dụ, cần chọn theo lịch của trường.
+Do kế hoạch kỳ 5 đang trống, dự báo trả INSUFFICIENT_DATA; xét điều kiện hiện tại và gom lớp vẫn chạy.
+student.csv và kỳ 0 trong khung đã được loader hỗ trợ.
+
+## Sinh lại trạng thái giả lập
+
+```powershell
+python scripts/generate_dataset.py . --dry-run
+python scripts/generate_dataset.py . --sync-credits
+```
+
+Lệnh --sync-credits thay trạng thái giả lập và tín chỉ, tự backup trước khi sửa.
+Sau đó chạy --prepare để cập nhật processed. Không chạy generator trên dữ liệu sinh viên thật.
+Tín chỉ hiện cộng mọi môn PASSED trong dataset thử nghiệm; cần xác nhận quy tắc công nhận tín chỉ thực tế.
+Mã combo/elective là vị trí học phần chưa có lựa chọn cá nhân, không suy ra đã học tất cả môn của combo.
+
+## Kiểm thử và demo
+
+```powershell
 python -m unittest discover -s tests -v
-python -m ojt_risk --data tests/fixtures/demo --evaluation-term 2026_HK1 --target-term 2026_HK2 --output output/report.json
+python scripts/predict.py --data data/synthetic/demo --evaluation-term 2026_HK1 --target-term 2026_HK2
 ```
 
-Cần Python 3.10+. Script PowerShell cũng hỗ trợ Python đi kèm Codex nếu có.
+Nếu chưa cài package, đặt $env:PYTHONPATH='src' khi chạy unittest.
+Các script tự tìm src nên có thể chạy trực tiếp từ repo mà không cài package.
 
-## Kiểm tra/sinh trạng thái cho dataset chính
+## API phát triển
 
 ```powershell
-python scripts/generate_student_course_status.py . --dry-run
-python scripts/generate_student_course_status.py . --sync-credits
+python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
 ```
 
-Lệnh thứ hai sinh lại dữ liệu giả lập và cập nhật tín chỉ; tự sao lưu trước khi sửa.
-Báo cáo được ghi ở output/data_checks. Không chạy lệnh này trên dữ liệu thật của trường.
+GET /health báo rõ ML chưa sẵn sàng. POST /prediction nhận evaluation_term và target_term,
+đọc dữ liệu từ OJT_DATA_DIR (mặc định data/processed), trả kết quả mode=rules.
+Không đặt API chưa có xác thực lên mạng công khai.
 
-## Backup và Git
+## Docker
 
-Backup là ảnh chụp của các file trước một lần sửa, không phải bản đồng bộ trực tiếp.
-Mỗi lần sinh dữ liệu có thư mục backup riêng; file cũ không tự cập nhật theo dataset.
-`data/backups/` và `output/` được .gitignore loại khỏi các lần git add thông thường.
-Chúng không được push lên GitHub bằng quy trình đó; cần tự sao chép ra nơi khác
-nếu muốn có bản dự phòng ngoài máy. Không xóa backup khi chưa xác định còn cần phục hồi.
+```powershell
+docker build -f docker/Dockerfile -t ai-ojt-risk .
+docker run --rm -p 127.0.0.1:8000:8000 -v "${PWD}/data/processed:/app/data/processed:ro" ai-ojt-risk
+```
 
-Chỉ version dữ liệu giả lập/khung chương trình được phép chia sẻ. Nếu có dữ liệu
-sinh viên thật, dùng data/private/ (đã được .gitignore bỏ qua).
-
-Chi tiết: [Quản lý dữ liệu](docs/data_management.md).
-Chưa tích hợp API, AI diễn giải hoặc gửi email thực tế.
+Model training chỉ được triển khai khi có mục tiêu dự báo, nhãn lịch sử và cách chia train/test phù hợp.
+Các lệnh train.py và evaluate.py hiện dừng với thông báo chưa triển khai, không xuất model giả.

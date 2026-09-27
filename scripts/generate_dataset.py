@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 """Build a deterministic synthetic end-of-semester snapshot from the CSV inputs.
 
 This is test data, not academic records provided by the school.
@@ -84,10 +87,16 @@ def main():
     parser.add_argument('repo',type=Path)
     parser.add_argument('--sync-credits',action='store_true')
     parser.add_argument('--dry-run',action='store_true')
+    parser.add_argument('--prepare',action='store_true',help='Validate and assemble raw/synthetic into processed without regenerating students')
     args=parser.parse_args()
-    directory=args.repo/'data/dataset'
+    if args.prepare:
+        from ojt_ai.data.preprocessing import prepare_dataset
+        destination, warnings=prepare_dataset(args.repo)
+        print(json.dumps({'prepared':str(destination),'warnings':warnings},ensure_ascii=True))
+        return
+    directory=args.repo/'data/synthetic'
     fields, students=read(directory/'student.csv')
-    _, courses=read(directory/'curriculum_courses.csv')
+    _, courses=read(args.repo/'data/raw/curriculum_courses.csv')
     statuses,adjusted,mismatches=build(students,courses)
     validate(students,courses,statuses)
     summary=dict(synthetic=True,snapshot='END_OF_CURRENT_SEMESTER',students=len(students),rows=len(statuses),status_counts=dict(Counter(r['status'] for r in statuses)),credit_mismatches=len(mismatches),sync_credits=args.sync_credits)

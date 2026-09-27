@@ -1,9 +1,15 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import argparse
 import json
 import sys
 from pathlib import Path
 
-from .engine import DataError, analyze, load_data
+from ojt_ai.data.validator import DataError
+from ojt_ai.data.loader import load_data
+from ojt_ai.services.risk_service import analyze
+from ojt_ai.rules.eligibility import load_rules
 
 
 def main():
@@ -12,10 +18,11 @@ def main():
     parser.add_argument("--evaluation-term", required=True)
     parser.add_argument("--target-term", required=True)
     parser.add_argument("--output", type=Path, default=Path("output/report.json"))
+    parser.add_argument("--thresholds", type=Path, default=Path(__file__).resolve().parents[1]/"configs/thresholds.yaml")
     args = parser.parse_args()
     try:
         tables, warnings = load_data(args.data)
-        report = analyze(tables, args.evaluation_term, args.target_term)
+        report = analyze(tables, args.evaluation_term, args.target_term, load_rules(args.thresholds))
     except (OSError, UnicodeError, DataError) as exc:
         parser.exit(2, f"Data error: {exc}\n")
     report["warnings"] = warnings

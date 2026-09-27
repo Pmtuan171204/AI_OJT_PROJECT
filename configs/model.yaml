@@ -1,0 +1,6 @@
+{
+  "status": "not_implemented",
+  "algorithm": null,
+  "prediction_target": null,
+  "artifact_path": "models/trained/model.pkl"
+}

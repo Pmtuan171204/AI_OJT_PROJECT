@@ -5,9 +5,12 @@ from decimal import Decimal
 from pathlib import Path
 import shutil
 
-from ojt_risk.engine import DataError, allocate_classes, analyze, load_data
+from ojt_ai.data.validator import DataError
+from ojt_ai.data.loader import load_data
+from ojt_ai.rules.eligibility import allocate_classes
+from ojt_ai.services.risk_service import analyze
 
-SAMPLE = Path(__file__).resolve().parent / "fixtures" / "demo"
+SAMPLE = Path(__file__).resolve().parents[2] / "data" / "synthetic" / "demo"
 
 
 class EngineTests(unittest.TestCase):
